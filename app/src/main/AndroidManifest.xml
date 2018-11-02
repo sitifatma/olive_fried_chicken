@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.nurad.finalprojejtandroid">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/s"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/s"
+        android:supportsRtl="true"
+        android:theme="@style/AppThemeDark">
+        <activity
+            android:name=".SplashScreen"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppThemeDark.NoActionBar" />
+        <activity
+            android:name=".Profile"
+            android:label="Profile">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.nurad.finalprojejtandroid.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Bantuan"
+            android:label="Bantuan">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.nurad.finalprojejtandroid.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Produk_Activity"
+            android:label="Produk"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Login"
+            android:theme="@style/AppThemeDark.NoActionBar" />
+        <activity
+            android:name=".navigation"
+            android:label="@string/title_activity_navigation"></activity>
+    </application>
+
+</manifest>

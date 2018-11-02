@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardview_id"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:layout_width="150dp"
+    android:layout_height="190dp"
+    android:layout_margin="10dp"
+    cardview:cardCornerRadius="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/phone_img_id"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="#2d2d2d"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/phone_title_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Menu Title"
+            android:textColor="@color/textColorPrimary"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_margin="3dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Rp. "
+            android:textColor="@color/textColorSecondary"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/phone_harga_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="harga"
+            android:textColor="@color/textColorSecondary"
+            android:textSize="10sp" />
+            </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
