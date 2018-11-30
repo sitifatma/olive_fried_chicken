@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.nurad.finalprojejtandroid.Edit_Profill"
+    android:background="@color/BackgroundSecondary">
+
+    <TextView
+        android:text="Edit Text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/textView"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="normal|bold"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"/>
+    <EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:inputType="textEmailAddress"
+    android:ems="10"
+    android:id="@+id/Username"
+    android:hint="Masukkan Nama"
+    android:layout_marginTop="37dp"
+    android:layout_below="@+id/textView"
+    android:layout_alignParentStart="true"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/Username1"
+        android:hint="Masukkan Lokasi"
+        android:layout_below="@+id/Username"
+        android:layout_toEndOf="@+id/Username"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/Username2"
+        android:hint="Masukkan No Telephone"
+        android:layout_below="@+id/Username1"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Selesai"
+        android:onClick="selesai"
+        android:layout_width="250px"
+        android:layout_height="wrap_content"
+        android:id="@+id/BtnLogin"
+        android:background="@color/colorPrimary"
+        android:layout_below="@+id/Username2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp" />
+    </RelativeLayout>
+
+

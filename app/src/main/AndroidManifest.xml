@@ -44,7 +44,8 @@
             android:theme="@style/AppThemeDark.NoActionBar" />
         <activity
             android:name=".navigation"
-            android:label="@string/title_activity_navigation"></activity>
+            android:label="@string/title_activity_navigation" />
+        <activity android:name=".Edit_Profill"></activity>
     </application>
 
 </manifest>
